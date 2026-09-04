@@ -32,3 +32,7 @@ class Task:
     def task_id(self):
         return self._task_id
     
+    @property
+    def done(self):
+        return self._done
+    
