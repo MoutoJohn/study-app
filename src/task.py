@@ -12,7 +12,7 @@ class Task:
         
     def __str__(self):
         if self.done:
-            return(f"[x] {self.title}")
+            return f"[x] {self.title}"
         else:
-            return(f"[ ] {self.title}")
+            return f"[ ] {self.title}"
     
