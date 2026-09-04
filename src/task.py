@@ -18,3 +18,14 @@ class Task:
         else:
             return f"[ ] {self.title}"
     
+    @property
+    def title(self):
+        return self._title
+    
+    @title.setter
+    def title(self, title):
+        if not title.strip():
+            raise ValueError("The title cannot be empty.")
+        self._title = title
+            
+    
