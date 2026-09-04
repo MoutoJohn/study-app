@@ -6,4 +6,6 @@ class Task:
         
     def mark_done(self):
         self.done = True
-        
+    
+    def mark_undone(self):
+        self.done = False
