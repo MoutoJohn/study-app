@@ -6,11 +6,8 @@ class Task:
         self.done = done
         self.task_id = task_id if task_id is not None else uuid.uuid4()
         
-    def mark_done(self):
-        self.done = True
-    
-    def mark_undone(self):
-        self.done = False
+    def toggle(self):
+        self.done = not self.done
         
     def __str__(self):
         if self.done:
