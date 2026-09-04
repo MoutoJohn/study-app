@@ -1,8 +1,10 @@
+import uuid
+
 class Task:
-    def __init__(self, title, done=False, id):
+    def __init__(self, title, done=False, task_id):
         self.title = title
         self.done = done
-        self.id = id
+        self.task_id = task_id
         
     def mark_done(self):
         self.done = True
