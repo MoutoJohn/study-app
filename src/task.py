@@ -1,10 +1,10 @@
 import uuid
 
 class Task:
-    def __init__(self, title, done=False, task_id):
+    def __init__(self, title, done=False, task_id=None):
         self.title = title
         self.done = done
-        self.task_id = task_id
+        self.task_id = task_id if task_id is not None else uuid.uuid4()
         
     def mark_done(self):
         self.done = True
