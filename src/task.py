@@ -9,3 +9,10 @@ class Task:
     
     def mark_undone(self):
         self.done = False
+        
+    def __str__(self):
+        if self.done:
+            return(f"[x] {self.title}")
+        else:
+            return(f"[ ] {self.title}")
+    
