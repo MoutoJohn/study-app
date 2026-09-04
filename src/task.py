@@ -4,7 +4,7 @@ class Task:
     def __init__(self, title, done=False, task_id=None):
         self.title = title
         self.done = done
-        self.task_id = task_id if task_id is not None else uuid.uuid4()
+        self._task_id = task_id if task_id is not None else uuid.uuid4()
         
     def toggle(self):
         self.done = not self.done
@@ -27,5 +27,8 @@ class Task:
         if not title.strip():
             raise ValueError("The title cannot be empty.")
         self._title = title.strip()
-            
+    
+    @property
+    def task_id(self):
+        return self._task_id
     
