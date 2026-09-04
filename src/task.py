@@ -15,6 +15,9 @@ class Task:
         else:
             return f"[ ] {self.title}"
     
+    def __repr__(self):
+        return f"Task(title={self.title!r}, done={self.done}, task_id={self.task_id})"
+    
     @property
     def title(self):
         return self._title
