@@ -23,6 +23,6 @@ class Task:
     def title(self, title):
         if not title.strip():
             raise ValueError("The title cannot be empty.")
-        self._title = title
+        self._title = title.strip()
             
     
