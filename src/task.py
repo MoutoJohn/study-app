@@ -36,3 +36,7 @@ class Task:
     def done(self):
         return self._done
     
+    @done.setter
+    def done(self, done):
+        self._done = done
+    
