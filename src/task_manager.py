@@ -16,5 +16,4 @@ class TaskManager:
         return self._tasks.get(task_id)
     
     def get_all_tasks(self):
-        tasks = list(self._tasks.values())
-        return tasks
+        return list(self._tasks.values())
