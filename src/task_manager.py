@@ -12,4 +12,5 @@ class TaskManager:
     def remove_task(self, task_id):
         return self._tasks.pop(task_id)
         
-            
+    def get_task(self, task_id):
+        return self._tasks.get(task_id)
