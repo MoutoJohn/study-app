@@ -9,3 +9,7 @@ class TaskManager:
         self._tasks[task.task_id] = task 
         return task
         
+    def remove_task(self, task_id):
+        return self._tasks.pop(task_id)
+        
+            
